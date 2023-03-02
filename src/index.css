@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  font-size: 43px;
+  font-weight: 600;
+}
+
+.navbar-item:hover > .down-arrow {
+  rotate: -180deg;
+  color: #2CBCA5;
+}
