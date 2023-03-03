@@ -34,12 +34,12 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="font-sans mt-4 absolute py-[2px] px-[1.5rem] bg-transparent w-full">
+    <nav className="font-inter mt-4 absolute py-[2px] px-[1.5rem] bg-transparent w-full">
       <div className="flex justify-between items-center md:max-w-[1400px] mx-auto">
         <div className="font-extrabold text-[28px]">LOGO</div>
-        <div className="flex items-center justify-between text-[15px]">
+        <div className="flex items-center justify-between text-[15px] ml-8 pl-4">
           {data.map((item) => (
-            <div className="navbar-item flex items-center cursor-pointer transition-all duration-500 hover:text-lightGreen py-4 px-5">
+            <div className="navbar-item flex items-center cursor-pointer transition-all duration-500 hover:text-lightGreen py-4 px-[17px]">
               <div key={item.id} className="font-medium mr-[6px]">
                 {item.title}
               </div>

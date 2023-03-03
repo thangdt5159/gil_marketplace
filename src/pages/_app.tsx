@@ -5,7 +5,7 @@ import "../index.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className="font-display bg-main text-white">
+    <div className="font-raleway bg-main text-white">
       <Navbar />
       <Component {...pageProps} />
       <Footer />

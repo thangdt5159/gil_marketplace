@@ -4,8 +4,9 @@ import React from "react";
 import flame from "../../public/images/explore/flame.png";
 import Nft from "./Nft";
 import { FaArrowRight } from "react-icons/fa";
+import TopTitle from "./TopTitle";
 
-const Explore = () => {
+const TopItems = () => {
   const data = [
     {
       id: 1,
@@ -42,10 +43,7 @@ const Explore = () => {
             alt=""
             className="w-[42px] h-[42px] mx-auto mb-5"
           />
-          <h5 className="text-lightGreen font-bold font-sans leading-[1.4em] mb-[10px]">
-            TOP ITEMS
-          </h5>
-          <h2 className="mb-[30px]">Explore awesome artworks</h2>
+          <TopTitle header="TOP ITEMS" title="Explore awesome artworks" />
         </div>
         <div className="flex justify-between items-center">
           {data.map((item) => (
@@ -55,7 +53,7 @@ const Explore = () => {
           ))}
         </div>
         <div className="mt-[60px] text-lightPink font-bold text-[20px] flex items-center justify-center">
-          <span className="flex items-center pb-2 border-b border-lightPink cursor-pointer transition-all duration-500 hover:text-white hover:border-white">
+          <span className="flex items-center pb-2 border-b border-lightPink cursor-pointer transition-all duration-500 hover:text-white hover:border-white tracking-[0.5px]">
             Brower more
             <FaArrowRight className="ml-[5px]" />
           </span>
@@ -65,4 +63,4 @@ const Explore = () => {
   );
 };
 
-export default Explore;
+export default TopItems;

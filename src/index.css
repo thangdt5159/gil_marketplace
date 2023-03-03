@@ -9,5 +9,9 @@ h2 {
 
 .navbar-item:hover > .down-arrow {
   rotate: -180deg;
-  color: #2CBCA5;
+  color: #2cbca5;
+}
+
+.ball-moving {
+  animation-delay: 500ms;
 }

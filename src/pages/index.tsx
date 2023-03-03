@@ -2,9 +2,9 @@ import Head from "next/head";
 import About from "../components/About";
 import Collection from "../components/Collection";
 import Community from "../components/Community";
-import CreateNft from "../components/CreateNft";
+import Guide from "../components/Guide";
 import Creator from "../components/Creator";
-import Explore from "../components/Explore";
+import TopItems from "../components/TopItems";
 import Header from "../components/Header";
 import Join from "../components/Join";
 // import { Inter } from 'next/font/google'
@@ -22,18 +22,18 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Raleway:wght@400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </Head>
       <main>
         <Header />
-        <Explore />
+        <TopItems />
         <Creator />
         <Community />
         <About />
         <Collection />
-        <CreateNft />
+        <Guide />
         <Join />
       </main>
     </>
