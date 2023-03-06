@@ -35,9 +35,9 @@ const Creator = () => {
   ];
 
   return (
-    <section className="pb-[80px]">
+    <section className="pb-[60px] md:pb-[80px]">
       <div className="md:max-w-[1200px] mx-auto p-[10px] text-center">
-        <div className="pt-[80px] px-5">
+        <div className="md:pt-[80px] md:px-5">
           <TopTitle
             header="CREATE"
             title="Want to become a creator?"
@@ -49,7 +49,7 @@ const Creator = () => {
           {data.map((item) => (
             <div
               key={item.id}
-              className="relative md:flex justify-between items-center m-[25px] p-[10px]"
+              className="relative md:flex justify-between items-center md:m-[25px] md:p-[10px] p-[35px]"
             >
               <div>
                 <Image
@@ -69,14 +69,14 @@ const Creator = () => {
                 alt=""
                 width={120}
                 height={30}
-                className={`${
-                  item.id === 4 && "hidden"
+                className={`hidden md:block ${
+                  item.id === 4 && "invisible"
                 } md:absolute md:-right-[35%] md:top-[22%]`}
               />
             </div>
           ))}
         </div>
-        <button className="mt-[10px] text-[20px] font-bold tracking-[0.5px] border border-border rounded-full py-[17px] px-[50px] leading-[22px] transition-all duration-500 hover:bg-lightGreen hover:border-lightGreen">
+        <button className="mt-[-10px] mb-[10px] md:mb-0 md:mt-[10px] text-[20px] font-bold tracking-[0.5px] border border-border rounded-full py-[17px] px-[50px] leading-[22px] transition-all duration-500 hover:bg-lightGreen hover:border-lightGreen">
           Start now
         </button>
       </div>

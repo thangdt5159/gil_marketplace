@@ -5,6 +5,7 @@ import flame from "../../public/images/explore/flame.png";
 import Nft from "./Nft";
 import { FaArrowRight } from "react-icons/fa";
 import TopTitle from "./TopTitle";
+import Navbar from "./Navbar";
 
 const TopItems = () => {
   const data = [
@@ -35,9 +36,9 @@ const TopItems = () => {
   ];
 
   return (
-    <section className="py-[80px]">
-      <div className="md:max-w-[1200px] mx-auto border-t border-[#6369775E] p-[10px]">
-        <div className="pt-[80px] pb-5 text-center">
+    <section className="md:py-[80px] pt-10 pb-[60px] px-[10px] md:px-0">
+      <div className="md:max-w-[1200px] mx-auto border-t border-[#6369775E] md:p-[10px]">
+        <div className="pt-10 md:pt-[80px] pb-5 text-center">
           <Image
             src={flame}
             alt=""
@@ -45,16 +46,16 @@ const TopItems = () => {
           />
           <TopTitle header="TOP ITEMS" title="Explore awesome artworks" />
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between md:flex-nowrap flex-wrap items-center">
           {data.map((item) => (
-            <div key={item.id} className="w-1/4">
+            <div key={item.id} className="w-full md:w-1/4">
               <Nft nft={item} />
             </div>
           ))}
         </div>
-        <div className="mt-[60px] text-lightPink font-bold text-[20px] flex items-center justify-center">
-          <span className="flex items-center pb-2 border-b border-lightPink cursor-pointer transition-all duration-500 hover:text-white hover:border-white tracking-[0.5px]">
-            Brower more
+        <div className="mt-5 mb-[10px] md:mb-0 md:mt-[60px] text-lightPink font-bold text-[20px] flex items-center justify-center">
+          <span className="flex items-center pb-2 border-b border-lightPink cursor-pointer transition-all duration-500 hover:text-white hover:border-white tracking-[0.5px] leading-[22px]">
+            Browse more
             <FaArrowRight className="ml-[5px]" />
           </span>
         </div>

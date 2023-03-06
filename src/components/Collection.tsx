@@ -26,22 +26,22 @@ const Collection = () => {
   ];
 
   return (
-    <section className="pb-[100px]">
+    <section className="pb-10 md:pb-[100px]">
       <div className="md:max-w-[1200px] mx-auto p-[10px]">
         <TopTitle
           header="FEATURED COLLECTION"
           title="Enjoy the latest hot collection"
         />
-        <div className="flex justify-between items-center">
+        <div className="flex flex-wrap md:flex-nowrap justify-between items-center pt-[10px]">
           {data.map((item) => (
-            <div key={item.id} className="w-1/3">
+            <div key={item.id} className="md:w-1/3 w-full">
               <Nft nft={item} />
             </div>
           ))}
         </div>
-        <div className="mt-[60px] text-lightPink font-bold text-[20px] flex items-center justify-center">
-          <span className="flex items-center pb-2 border-b border-lightPink cursor-pointer transition-all duration-500 hover:text-white hover:border-white tracking-[0.5px]">
-            Brower more
+        <div className=" mt-5 mb-[10px] md:mt-[60px] text-lightPink font-bold text-[20px] flex items-center justify-center">
+          <span className="flex items-center pb-2 border-b border-lightPink cursor-pointer transition-all duration-500 hover:text-white hover:border-white tracking-[0.5px] leading-[22px]">
+            Browse more
             <FaArrowRight className="ml-[5px]" />
           </span>
         </div>

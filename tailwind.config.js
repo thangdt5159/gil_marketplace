@@ -33,12 +33,17 @@ module.exports = {
           transform: "rotate(360deg)",
         },
       },
+      rotate: {
+        from: { transform: "rotate(-360deg)" },
+        to: { transform: "rotate(0)" },
+      },
     },
     animation: {
       diagonalMove: "move 5s ease-in-out infinite",
       diagonalMove2: "move2 3s ease-in-out infinite",
       ping: "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
       spin: "spin 10s linear infinite",
+      rotate: "rotate 15s linear infinite",
     },
     fontFamily: {
       sans: ["ui-sans-serif", "system-ui"],

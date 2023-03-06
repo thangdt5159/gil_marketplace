@@ -29,12 +29,13 @@ const Footer = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-r from-[#141d21] via-[#070d16] to-[#0c1225] font-inter">
-      <div className="max-w-[1366px] mx-auto pt-[2rem] pb-[0.5rem] px-[15px]">
-        <div className="mt-[3rem] mb-[1.5rem] pb-[0.5rem] border-b border-[#ffffff12]">
+    <section className="md:bg-gradient-to-r from-[#141d21] via-[#070d16] to-[#0c1225] font-inter">
+      <div className="max-w-[1366px] mx-auto pt-[2rem] pb-[0.5rem] px-8 md:px-[15px]">
+        <div className="mt-4 md:mt-[3rem] mb-[1.5rem] pb-[0.5rem] border-b border-[#ffffff12]">
           <div className="-mx-8 md:flex justify-between">
+
             {/* 1 */}
-            <div className="w-1/3 px-8 pb-8">
+            <div className="md:w-1/3 px-8 pb-8">
               <h3 className="text-[30px] mb-[15px] font-bold">LOGO</h3>
               <p className="text-[15px] mb-4 tracking-[-0.009em]">
                 Reinventing the way of creating websites, we aim to create the
@@ -43,7 +44,7 @@ const Footer = () => {
             </div>
 
             {/* 2 */}
-            <div className="w-1/3 px-8 pb-8 tracking-[-0.009em]">
+            <div className="md:w-1/3 px-8 pb-8 tracking-[-0.009em]">
               <h4 className="text-[14px] mb-5 font-semibold tracking-[0.5px] before:w-2 before:content-['|'] before:text-lightGreen before:font-extrabold before:mr-2 before:text-[14px]">
                 CONTACT US
               </h4>
@@ -62,7 +63,7 @@ const Footer = () => {
             </div>
 
             {/* 3 */}
-            <form className="w-1/3 px-8 pb-8">
+            <form className="md:w-1/3 px-8 pb-8">
               <h4 className="text-[14px] mb-5 font-semibold tracking-[0.5px] before:w-2 before:content-['|'] before:text-lightGreen before:font-extrabold before:mr-2 before:text-[14px]">
                 SIGN UP FOR EMAIL UPDATES
               </h4>
@@ -85,13 +86,13 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        <div className="md:flex justify-between text-[13px]">
-          <p className="mb-4 text-[#9097aa] tracking-[-0.0025em]">
+        <div className="max-w-[690px] md:max-w-none flex flex-col-reverse md:flex-row justify-between text-[13px]">
+          <p className="mb-4 text-[#9097aa] tracking-[-0.0025em] text-center md:text-start">
             Copyright ©2023 Toka. All rights reserved.
           </p>
-          <ul className="mb-4 flex justify-between">
+          <ul className="mb-4 flex flex-wrap justify-center md:justify-between">
             {data.map((item) => (
-              <li key={item.id} className="px-4 leading-[1.7rem] tracking-[-0.0025em]">
+              <li key={item.id} className="pr-4 md:px-4 leading-[1.7rem] tracking-[-0.0025em]">
                 {item.title}
               </li>
             ))}
